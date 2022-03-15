@@ -1,0 +1,112 @@
+/* about me */
+
+.about {
+    width: 100%;
+    position: relative;
+}
+
+.about img {
+    float: left;
+    width: 30%;
+    margin-left: 20%;
+    margin-right: 4em;
+}
+
+.about .about-text {
+    width: 30%;
+    float: left;
+}
+
+.about .about-text h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-weight: 600;
+    color: #000;
+}
+
+.about .about-text p {
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.about .about-text table {
+    margin-bottom: 35px;
+}
+
+.about .about-text table .table-title-row {
+    color: #000;
+    font-weight: 700;
+    width: 130px;
+    height: 30px;
+}
+
+.about .about-text table .table-info-row {
+    width: 230px;
+    height: 30px;
+    color: #666;
+}
+
+.about .about-text h3 {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.about .about-text h3 span {
+    color: #3e64ff;
+}
+
+.about .about-text .view-linkedin {
+    background-color: #3e64ff;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 16px;
+    font-weight: 500;
+}
+
+.about .about-text a:hover {
+    color: #000;
+}
+
+.about .about-text .download-cv {
+    background-color: #5cb85c;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 16px;
+    font-weight: 500;
+}
+
+.about .about-text a:hover {
+    color: #000;
+}
+
+.about::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.skills {
+    position: relative;
+}
+
+.skills-icons {
+    width: 100%;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.skills .icon {
+    width: 7%;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 70px;
+    margin-bottom: 2em;
+    margin-right: 4%;
+}

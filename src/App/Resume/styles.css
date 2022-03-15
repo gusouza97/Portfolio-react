@@ -1,0 +1,98 @@
+.wrapper {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.sidebarMenu {
+    width: 15%;
+    display: flex;
+    float: left;
+}
+
+.sidebarMenu ul li {
+    list-style: none;
+    font-weight: 700;
+    font-size: 12pt;
+    margin-bottom: 17px;
+    margin-left: -15px;
+}
+
+.resume {
+    margin-top: 10px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.resume-title {
+    color: #3E64FF;
+    margin-bottom: 45px;
+    font-weight: 800;
+}
+
+.resume-item {
+    border-bottom: 1px solid rgb(238, 231, 231);
+    margin-bottom: 50px;
+}
+
+.resume-year-text {
+    color: #3E64FF;
+    font-size: 13pt;
+    margin-bottom: 5px;
+}
+
+.resume-graduated-text {
+    color: black;
+    font-weight: 900;
+    font-size: 17pt;
+    margin-bottom: 8px;
+}
+
+.resume-university-text {
+    color: #000;
+    font-size: 13pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.resume-descripton-text {
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+.section-education {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-experience {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-skills {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-certificates {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.resume-item .icon {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    font-size: 1.5em;
+    background-color: #3E64FF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}

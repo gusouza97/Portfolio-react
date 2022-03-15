@@ -1,0 +1,49 @@
+/* header presentation */
+
+header {
+    width: 100%;
+    height: 62em;
+    background-image: linear-gradient(to left, white 0, white 50%, #ECF0FF 50%);
+}
+
+.header-presentation {
+    padding-top: 25em;
+    text-align: center;
+}
+
+.header-presentation h1 {
+    font-size: 1.2em;
+    color: #3e64ff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.header-presentation h2 {
+    font-size: 4em;
+    margin-bottom: 8px;
+    font-weight: 800;
+    color: #000;
+}
+
+.header-presentation p {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #000;
+}
+
+.header-presentation p .text-write-animation {
+    color: #3e64ff;
+}
+
+.header-presentation p .text-write-animation:after {
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+/* TypeWriter */
+
+.Typewriter__wrapper {
+    color: #3e64ff;
+}
