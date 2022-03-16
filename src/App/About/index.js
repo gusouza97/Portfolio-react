@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faPhp, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import SobreImg from '../../img/about-img.jpg';
+import CountUp from 'react-countup';
+import VisibilitySensor from "react-visibility-sensor";
 
 function About(){
+
+    const [state, setState] = useState(true);
+
     return(
     <div>
         <div className="about">
             <img src={SobreImg} alt="imagem IA"/>
             
-            <div className="about-text">
+            <div data-aos="fade-up" className="about-text">
                 <h2>Sobre Mim</h2>
                 <p>Amante da tecnologia desde 2012 e sempre apresentando muita curiosidade para aprender cada vez mais! Minhas maiores paixões são desenvolvimento, investimentos, futebol e astronomia.</p>
                 <table>
@@ -36,14 +41,28 @@ function About(){
                     </tr>
                 </table>
 
-                <h3><span>120</span> Project complete</h3>
+                <CountUp end={120} onEnd= {() => {
+                    setState(false);
+                    }} >
+                        {({ countUpRef, start }) => (
+                            <VisibilitySensor active={state} onChange={start} delayedCall>
+                                <h3><span ref={countUpRef} /> Project complete</h3>
+                            </VisibilitySensor>
+                        )}
+                </CountUp>
+
+                <VisibilitySensor>
+                    {({isVisible}) =>
+                        <h3><span>{isVisible ? <CountUp end={120}/> : '120'}</span> </h3>
+                    }
+                </VisibilitySensor>
                 
                 <a className="view-linkedin" href="https://www.linkedin.com/in/gustavo-silva-souza/" target="_blank">LINKEDIN</a>
                 <a className="download-cv" href="#">DOWNLOAD CV</a>
             </div>
         </div>
         <div className="skills">
-            <div className="skills-icons">
+            <div data-aos="fade-up" className="skills-icons">
                 <FontAwesomeIcon className="icon" icon={faHtml5}></FontAwesomeIcon>
                 <FontAwesomeIcon className="icon" icon={faCss3Alt}></FontAwesomeIcon>
                 <FontAwesomeIcon className="icon" icon={faJs}></FontAwesomeIcon>
