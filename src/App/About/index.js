@@ -45,17 +45,11 @@ function About(){
                     setState(false);
                     }} >
                         {({ countUpRef, start }) => (
-                            <VisibilitySensor active={state} onChange={start} delayedCall>
-                                <h3><span ref={countUpRef} /> Project complete</h3>
+                            <VisibilitySensor active={state} onChange={start}>
+                                <h3><span ref={countUpRef} /> Projetos completos</h3>
                             </VisibilitySensor>
                         )}
                 </CountUp>
-
-                <VisibilitySensor>
-                    {({isVisible}) =>
-                        <h3><span>{isVisible ? <CountUp end={120}/> : '120'}</span> </h3>
-                    }
-                </VisibilitySensor>
                 
                 <a className="view-linkedin" href="https://www.linkedin.com/in/gustavo-silva-souza/" target="_blank">LINKEDIN</a>
                 <a className="download-cv" href="#">DOWNLOAD CV</a>

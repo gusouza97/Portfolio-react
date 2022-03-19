@@ -12,22 +12,22 @@ header {
 }
 
 .header-presentation h1 {
-    font-size: 1.2em;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
     color: #3e64ff;
     text-transform: uppercase;
-    margin-bottom: 5px;
 }
 
 .header-presentation h2 {
-    font-size: 4em;
-    margin-bottom: 8px;
+    font-size: 60px;
     font-weight: 800;
     color: #000;
 }
 
 .header-presentation p {
-    font-size: 1.6em;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
     color: #000;
 }
 
