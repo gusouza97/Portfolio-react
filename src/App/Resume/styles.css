@@ -96,3 +96,170 @@
     padding: 10px;
     border-radius: 50%;
 }
+
+.skill-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    flex-direction: column;
+    height: 340px;
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 4em;
+    -webkit-box-shadow:0px 10px 20px -8px #7b7474;
+    -moz-box-shadow:0px 10px 20px -8px #7b7474;
+    box-shadow:0px 10px 20px -8px #7b7474;
+}
+
+.skill-box h2 {
+    padding: 10px 0 0;
+    color:#000;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom: 20px;
+}
+
+.skill-box .percent {
+    width:150px;
+    height:150px;
+    position:relative;
+    display: block;
+}
+
+.skill-box .percent svg {
+    width:150px;
+    height:150px;
+    position:relative;
+}
+
+.skill-box .percent svg circle {
+    width:150px;
+    height:150px;
+    fill:none;
+    stroke-width:6;
+    stroke:#000;
+    transform:translate(5px,5px);
+    stroke-dasharray:440;
+    stroke-dashoffset:440;
+    stroke-linecap:round;
+}
+
+.skill-box .percent svg circle:nth-child(1) {
+    stroke-dashoffset:0;
+    stroke:#f3f3f3;
+}
+
+.skill-box .percent .svg-html circle:nth-child(2) {
+    stroke-dashoffset:calc(440 - (440 * 95) / 100);
+    stroke:#3E64FF;
+}
+
+.skill-box .percent .svg-css circle:nth-child(2) {
+    stroke-dashoffset:calc(440 - (440 * 85) / 100);
+    stroke:#3E64FF;
+}
+
+.skill-box .percent .svg-js circle:nth-child(2) {
+    stroke-dashoffset:calc(440 - (440 * 70) / 100);
+    stroke:#3E64FF;
+}
+
+.skill-box .percent .num {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    color:#111;
+}
+
+.skill-box .percent .num h3 {
+    color: #000;
+    font-size:36px;
+}
+
+.skill-box .percent .num h3 span {
+    font-size:24px;
+    color: #000;
+}
+
+.skill-progress-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.progress-bar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.progress-bar h2 {
+    font-size: 12pt;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+
+.skill-progress-bar .progress-bar .pb-principal {
+    color:#000;
+    background-color:#ccc;
+    width: 90%;
+    border-radius: 3px
+}
+
+.pb-blue-react {
+    color:#fff;
+    background-color:#3E64FF;
+    width:40%;
+    text-align: center
+}
+
+.pb-blue-bootstrap {
+    color:#fff;
+    background-color:#3E64FF;
+    width:90%;
+    text-align: center
+}
+
+.pb-blue-php {
+    color:#fff;
+    background-color:#3E64FF;
+    width:60%;
+    text-align: center
+}
+
+.pb-blue-node {
+    color:#fff;
+    background-color:#3E64FF;
+    width:30%;
+    text-align: center
+}
+
+.pb-blue-mysql {
+    color:#fff;
+    background-color:#3E64FF;
+    width:70%;
+    text-align: center
+}
+
+.pb-blue-laravel {
+    color:#fff;
+    background-color:#3E64FF;
+    width:50%;
+    text-align: center
+}
