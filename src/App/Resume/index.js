@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import './styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faCertificate, faDiagramProject } from '@fortawesome/free-solid-svg-icons';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Resume(){
     useEffect(() => {
@@ -14,58 +15,49 @@ function Resume(){
     }, []);
 
     return(
+        <div id="resume">
             <div className="wrapper">
                 <div className="sidebarMenu">
                     <ul>
-                        <li>Educação</li>
-                        <li>Experiência</li>
-                        <li>Habilidades</li>
-                        <li>Certificados</li>
+                        <li><AnchorLink offset = '50' href="#section-education">Educação</AnchorLink></li>
+                        <li><AnchorLink offset = '50' href="#section-experience">Experiência</AnchorLink></li>
+                        <li><AnchorLink offset = '50' href="#section-skills">Habilidades</AnchorLink></li>
+                        <li><AnchorLink offset = '50' href="#section-certificates">Certificados</AnchorLink></li>
                     </ul>
                 </div>
                 <div className="resume">
-                    <div className="section-education">
+                    <div id="section-education">
                         <h2 className="resume-title">Educação</h2>
                         <div data-aos="fade-up" className="resume-item">
                             <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
-                            <h3 className="resume-year-text">2014-2015</h3>
-                            <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
-                            <h3 className="resume-university-text">Universidade Paulista</h3>
-                            <p className="resume-descripton-text">Descrever um pouco do curso</p>
-                        </div>
-                        <div data-aos="fade-up" className="resume-item">
-                            <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
-                            <h3 className="resume-year-text">2014-2015</h3>
-                            <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
-                            <h3 className="resume-university-text">Universidade Paulista</h3>
-                            <p className="resume-descripton-text">Descrever um pouco do curso</p>
-                        </div>
-                        <div data-aos="fade-up" className="resume-item">
-                            <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
-                            <h3 className="resume-year-text">2014-2015</h3>
+                            <h3 className="resume-year-text">2017-2021</h3>
                             <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
                             <h3 className="resume-university-text">Universidade Paulista</h3>
                             <p className="resume-descripton-text">Descrever um pouco do curso</p>
                         </div>
                     </div>
-                    <div className="section-experience">
+                    <div id="section-experience">
                         <h2 className="resume-title">Experiência</h2>
                         <div data-aos="fade-up" className="resume-item">
-                            <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
-                            <h3 className="resume-year-text">2014-2015</h3>
-                            <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
-                            <h3 className="resume-university-text">Universidade Paulista</h3>
-                            <p className="resume-descripton-text">Descrever um pouco do curso</p>
+                            <FontAwesomeIcon className="icon" icon={faDiagramProject}></FontAwesomeIcon>
+                            <h3 className="resume-year-text">2021-2022</h3>
+                            <h3 className="resume-graduated-text">Assistente de Tecnologia Educacional</h3>
+                            <h3 className="resume-university-text">Colégio Visconde de Porto Seguro</h3>
+                            <p className="resume-descripton-text">Configuração, controle e cuidados com iPads usados em aula, agendar/controlar 
+                            recursos da área de tecnologia educacional, orientar na elaboração de conteúdos 
+                            digitais, orientar professores no uso de recursos digitais.</p>
                         </div>
                         <div data-aos="fade-up" className="resume-item">
-                            <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
-                            <h3 className="resume-year-text">2014-2015</h3>
-                            <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
-                            <h3 className="resume-university-text">Universidade Paulista</h3>
-                            <p className="resume-descripton-text">Descrever um pouco do curso</p>
+                            <FontAwesomeIcon className="icon" icon={faDiagramProject}></FontAwesomeIcon>
+                            <h3 className="resume-year-text">2017-2019</h3>
+                            <h3 className="resume-graduated-text">Representante de Atenção ao Cliente</h3>
+                            <h3 className="resume-university-text">Mercado Livre</h3>
+                            <p className="resume-descripton-text">Identificar bugs reportados pelo cliente, personalização da resposta de acordo com 
+                            os valores e padrões da empresa, atendimento via e-mail ou chat, localizar possíveis 
+                            erros no processo.</p>
                         </div>
                     </div>
-                    <div className="section-skills">
+                    <div id="section-skills">
                         <h2 className="resume-title">Habilidades</h2>
                             <div data-aos="fade-up" className="skill-row">
                                 <div className="skill-box">
@@ -144,18 +136,19 @@ function Resume(){
                                 </div>
                             </div>
                     </div>
-                    <div className="section-certificates">
+                    <div id="section-certificates">
                         <h2 className="resume-title">Certificados</h2>
                         <div data-aos="fade-up" className="resume-item">
-                            <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
-                            <h3 className="resume-year-text">2014-2015</h3>
-                            <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
-                            <h3 className="resume-university-text">Universidade Paulista</h3>
-                            <p className="resume-descripton-text">Descrever um pouco do curso</p>
+                            <FontAwesomeIcon className="icon" icon={faCertificate}></FontAwesomeIcon>
+                            <h3 className="resume-year-text">2020</h3>
+                            <h3 className="resume-graduated-text">Scrum Foundation Professional Certificate (SFPC)</h3>
+                            <h3 className="resume-university-text">CertiProf</h3>
+                            <p className="resume-descripton-text">Certificação da metodologia de desenvolvimento ágil Scrum.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     );
 }
 

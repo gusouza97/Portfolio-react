@@ -12,7 +12,7 @@ function About(){
 
     return(
     <div>
-        <div className="about">
+        <div id="about">
             <img src={SobreImg} alt="imagem IA"/>
             
             <div data-aos="fade-up" className="about-text">

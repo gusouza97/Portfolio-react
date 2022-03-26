@@ -1,16 +1,24 @@
-.wrapper {
+#resume .wrapper {
+    display: flex;
+    flex-grow: 999;
+    flex-basis: 0;
     width: 100%;
     padding-left: 20%;
     padding-right: 20%;
+    margin-bottom: 70em;
 }
 
-.sidebarMenu {
-    width: 15%;
+#resume .wrapper .sidebarMenu {
+    height: 15em;
     display: flex;
     float: left;
+    flex-grow: 0;
+    flex-basis: 15%;
+    position: sticky;
+    top: 3rem;
 }
 
-.sidebarMenu ul li {
+#resume .wrapper .sidebarMenu ul li {
     list-style: none;
     font-weight: 700;
     font-size: 12pt;
@@ -18,7 +26,12 @@
     margin-left: -15px;
 }
 
-.resume {
+#resume .wrapper .sidebarMenu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#resume .wrapper .resume {
     margin-top: 10px;
     width: 45%;
     display: flex;
@@ -26,64 +39,23 @@
     float: left;
 }
 
-.resume-title {
+#resume .wrapper .resume #section-education {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#resume .wrapper .resume .resume-title {
     color: #3E64FF;
     margin-bottom: 45px;
     font-weight: 800;
 }
 
-.resume-item {
+#resume .wrapper .resume .resume-item {
     border-bottom: 1px solid rgb(238, 231, 231);
     margin-bottom: 50px;
 }
 
-.resume-year-text {
-    color: #3E64FF;
-    font-size: 13pt;
-    margin-bottom: 5px;
-}
-
-.resume-graduated-text {
-    color: black;
-    font-weight: 900;
-    font-size: 17pt;
-    margin-bottom: 8px;
-}
-
-.resume-university-text {
-    color: #000;
-    font-size: 13pt;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-left: 60px;
-}
-
-.resume-descripton-text {
-    margin-bottom: 50px;
-    margin-left: 60px;
-}
-
-.section-education {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.section-experience {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.section-skills {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.section-certificates {
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.resume-item .icon {
+#resume .wrapper .resume .resume-item .icon {
     display: block;
     float: left;
     margin-right: 15px;
@@ -97,13 +69,53 @@
     border-radius: 50%;
 }
 
-.skill-row {
+#resume .wrapper .resume .resume-year-text {
+    color: #3E64FF;
+    font-size: 13pt;
+    margin-bottom: 5px;
+}
+
+#resume .wrapper .resume .resume-graduated-text {
+    color: black;
+    font-weight: 900;
+    font-size: 17pt;
+    margin-bottom: 8px;
+}
+
+#resume .wrapper .resume .resume-university-text {
+    color: #000;
+    font-size: 13pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+#resume .wrapper .resume .resume-descripton-text {
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+#resume .wrapper .resume #section-experience {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#resume .wrapper .resume #section-skills {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#resume .wrapper .resume #section-certificates {
+    width: 100%;
+}
+
+#resume .wrapper .skill-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.skill-box {
+#resume .wrapper .skill-row .skill-box {
     display: flex;
     justify-content:center;
     align-items:center;
@@ -118,7 +130,7 @@
     box-shadow:0px 10px 20px -8px #7b7474;
 }
 
-.skill-box h2 {
+#resume .wrapper .skill-row .skill-box h2 {
     padding: 10px 0 0;
     color:#000;
     font-weight:700;
@@ -126,20 +138,20 @@
     margin-bottom: 20px;
 }
 
-.skill-box .percent {
+#resume .wrapper .skill-row .skill-box .percent {
     width:150px;
     height:150px;
     position:relative;
     display: block;
 }
 
-.skill-box .percent svg {
+#resume .wrapper .skill-row .skill-box .percent svg {
     width:150px;
     height:150px;
     position:relative;
 }
 
-.skill-box .percent svg circle {
+.skill-row .skill-box .percent svg circle {
     width:150px;
     height:150px;
     fill:none;
