@@ -19,10 +19,10 @@ function Resume(){
             <div className="wrapper">
                 <div className="sidebarMenu">
                     <ul>
-                        <li><AnchorLink offset = '50' href="#section-education">Educação</AnchorLink></li>
-                        <li><AnchorLink offset = '50' href="#section-experience">Experiência</AnchorLink></li>
-                        <li><AnchorLink offset = '50' href="#section-skills">Habilidades</AnchorLink></li>
-                        <li><AnchorLink offset = '50' href="#section-certificates">Certificados</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#section-education">Educação</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#section-experience">Experiência</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#section-skills">Habilidades</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#section-certificates">Certificados</AnchorLink></li>
                     </ul>
                 </div>
                 <div className="resume">

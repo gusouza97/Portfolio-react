@@ -1,11 +1,18 @@
 /* navbar */
-
 nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
     position: fixed;
-    height: 80px;
-    left: 50%;
-    float: left;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-active {
+    background-color: white;
 }
 
 nav::after {
@@ -17,18 +24,18 @@ nav::after {
 .nav-links ul {
     height: 60px;
     line-height: 60px;
-    float: left;
-    position: relative;
-    left: -50%;
+    display: flex;
 }
 
 .nav-links li {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 35px;
     font-size: 16px;
     font-weight: 400;
-    vertical-align: middle;
 }
 
 .nav-links li a {
@@ -42,7 +49,7 @@ nav::after {
     position: absolute;
     width: 100%;
     height: 3px;
-    margin-bottom: -3px;
+    margin-bottom: 15px;
     bottom: 0;
     left: 0;
     background-color: #3E64FF;

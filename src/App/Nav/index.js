@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Nav(){
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        if(window.scrollY > 70) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
+
     return(
-            <nav>
+            <nav className={navbar ? 'navbar-active' : ''}>
                 <div className="nav-links">
                     <ul>
-                        <li><AnchorLink href="#">Início</AnchorLink></li>
-                        <li><AnchorLink href="#about">Sobre</AnchorLink></li>
-                        <li><AnchorLink offset = '50' href="#resume">Currículo</AnchorLink></li>
-                        <li><AnchorLink offset = '50' href="#">Projetos</AnchorLink></li>
-                        <li><AnchorLink offset = '50' href="#contact">Contato</AnchorLink></li>
+                        <li><AnchorLink href="#header">Início</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#about">Sobre</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#resume">Currículo</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#">Projetos</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#contact">Contato</AnchorLink></li>
                     </ul>
                 </div>
             </nav>

@@ -2,6 +2,7 @@
 
 #about {
     width: 100%;
+    display: flex;
     position: relative;
 }
 

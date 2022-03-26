@@ -16,7 +16,7 @@ function Header(){
     }, []);
 
     return(
-        <header>
+        <header id="header">
             <Nav />
             <div className="header-presentation">
                 <h1 data-aos="fade-up">Olá! Meu nome é</h1>
