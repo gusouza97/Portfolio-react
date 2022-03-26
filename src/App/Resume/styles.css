@@ -28,7 +28,28 @@
 
 #resume .wrapper .sidebarMenu ul li a {
     text-decoration: none;
-    color: #000;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.active {
+    color: #3e64ff;
+    margin-left: 20px;
+    position: relative;
+}
+
+.active::after {
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    width: 20px;
+    height: 2px;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #3e64ff;
 }
 
 #resume .wrapper .resume {

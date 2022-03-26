@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faCertificate, faDiagramProject } from '@fortawesome/free-solid-svg-icons';
@@ -7,6 +7,36 @@ import "aos/dist/aos.css";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Resume(){
+    const[activeEducation, setActiveEducation] = useState(false);
+    const[activeExperience, setActiveExperience] = useState(false);
+    const[activeSkills, setActiveSkills] = useState(false);
+    const[activeCertificates, setActiveCertificates] = useState(false);
+
+    const changeActive = () => {
+        if(window.scrollY > 1700 && window.scrollY < 1950) {
+            setActiveEducation(true);
+        } else {
+            setActiveEducation(false);
+        }
+        if(window.scrollY >= 1950 && window.scrollY < 2600) {
+            setActiveExperience(true);
+        } else {
+            setActiveExperience(false);
+        }
+        if(window.scrollY >= 2600 && window.scrollY < 3450) {
+            setActiveSkills(true);
+        } else {
+            setActiveSkills(false);
+        }
+        if(window.scrollY >= 3450 && window.scrollY < 3850) {
+            setActiveCertificates(true);
+        } else {
+            setActiveCertificates(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeActive);
+
     useEffect(() => {
         Aos.init({
             duration: 1000,
@@ -19,23 +49,23 @@ function Resume(){
             <div className="wrapper">
                 <div className="sidebarMenu">
                     <ul>
-                        <li><AnchorLink offset = '70' href="#section-education">Educação</AnchorLink></li>
-                        <li><AnchorLink offset = '70' href="#section-experience">Experiência</AnchorLink></li>
-                        <li><AnchorLink offset = '70' href="#section-skills">Habilidades</AnchorLink></li>
-                        <li><AnchorLink offset = '70' href="#section-certificates">Certificados</AnchorLink></li>
+                        <li><AnchorLink className={activeEducation ? 'active' : 'link-education'} offset = '70' href="#section-education">Educação</AnchorLink></li>
+                        <li><AnchorLink className={activeExperience ? 'active' : 'link-experience'} offset = '70' href="#section-experience">Experiência</AnchorLink></li>
+                        <li><AnchorLink className={activeSkills ? 'active' : 'link-skills'} offset = '70' href="#section-skills">Habilidades</AnchorLink></li>
+                        <li><AnchorLink className={activeCertificates ? 'active' : 'link-certificates'} offset = '70' href="#section-certificates">Certificados</AnchorLink></li>
                     </ul>
                 </div>
                 <div className="resume">
-                    <div id="section-education">
-                        <h2 className="resume-title">Educação</h2>
-                        <div data-aos="fade-up" className="resume-item">
-                            <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
-                            <h3 className="resume-year-text">2017-2021</h3>
-                            <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
-                            <h3 className="resume-university-text">Universidade Paulista</h3>
-                            <p className="resume-descripton-text">Descrever um pouco do curso</p>
+                        <div id="section-education">
+                            <h2 className="resume-title">Educação</h2>
+                            <div data-aos="fade-up" className="resume-item">
+                                <FontAwesomeIcon className="icon" icon={faGraduationCap}></FontAwesomeIcon>
+                                <h3 className="resume-year-text">2017-2021</h3>
+                                <h3 className="resume-graduated-text">Bacharelado em Ciência da Computação</h3>
+                                <h3 className="resume-university-text">Universidade Paulista</h3>
+                                <p className="resume-descripton-text">Descrever um pouco do curso</p>
+                            </div>
                         </div>
-                    </div>
                     <div id="section-experience">
                         <h2 className="resume-title">Experiência</h2>
                         <div data-aos="fade-up" className="resume-item">
