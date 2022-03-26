@@ -1,0 +1,40 @@
+#MyProjects .wrapper {
+    margin-top: 8em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#MyProjects .wrapper h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+#MyProjects .wrapper p {
+    margin-bottom: 4em;
+    font-size: 12pt;
+}
+
+#MyProjects .MyProjects-Row {
+    display: flex;
+}
+
+#MyProjects .MyProjects-Item {
+    width: 33.333%;
+}
+
+#MyProjects .MyProjects-Item:hover {
+    background-color: #3e64ff;
+}
+
+#MyProjects .MyProjects-Item img {
+    width: 100%;
+    
+}
+
+
+

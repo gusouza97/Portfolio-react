@@ -10,7 +10,7 @@ function App() {
         <Header/>
         <About />
         <Resume />
-
+        <MyProjects />
     </div>
   );
 }
