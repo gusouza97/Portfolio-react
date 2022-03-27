@@ -21,18 +21,70 @@
 
 #MyProjects .MyProjects-Row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #MyProjects .MyProjects-Item {
-    width: 33.333%;
-}
-
-#MyProjects .MyProjects-Item:hover {
-    background-color: #3e64ff;
+    width: 33.18%;
+    height: 340px;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 1px solid #ccc;
 }
 
 #MyProjects .MyProjects-Item img {
     width: 100%;
+    height: 100%;
 }
 
+#MyProjects .MyProjects-Text {
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in-out 0s;
+}
 
+#MyProjects .MyProjects-Text:hover {
+    background-color: rgba(62, 100, 255, 1);
+    opacity: 100;
+}
+
+#MyProjects .MyProjects-Text h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#MyProjects .MyProjects-Text p {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+#MyProjects .MyProjects-Text a {
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out 0s;
+    margin-bottom: 12px;
+    padding: 3px;
+}
+
+#MyProjects .MyProjects-Text a:hover {
+    background-color: white;
+    color: #3E64FF;
+}

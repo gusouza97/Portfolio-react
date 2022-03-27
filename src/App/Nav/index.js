@@ -22,8 +22,8 @@ function Nav(){
                         <li><AnchorLink href="#header">Início</AnchorLink></li>
                         <li><AnchorLink offset = '70' href="#about">Sobre</AnchorLink></li>
                         <li><AnchorLink offset = '70' href="#resume">Currículo</AnchorLink></li>
-                        <li><AnchorLink offset = '70' href="#">Projetos</AnchorLink></li>
-                        <li><AnchorLink offset = '70' href="#contact">Contato</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#MyProjects">Projetos</AnchorLink></li>
+                        <li><AnchorLink offset = '70' href="#Contact">Contato</AnchorLink></li>
                     </ul>
                 </div>
             </nav>

@@ -41,7 +41,7 @@ function About(){
                     </tr>
                 </table>
 
-                <CountUp end={120} onEnd= {() => {
+                <CountUp end={2} onEnd= {() => {
                     setState(false);
                     }} >
                         {({ countUpRef, start }) => (
@@ -52,7 +52,7 @@ function About(){
                 </CountUp>
                 
                 <a className="view-linkedin" href="https://www.linkedin.com/in/gustavo-silva-souza/" target="_blank">LINKEDIN</a>
-                <a className="download-cv" href="#">DOWNLOAD CV</a>
+                <a className="download-cv" href="https://github.com/gusouza97">GITHUB</a>
             </div>
         </div>
         <div className="skills">
